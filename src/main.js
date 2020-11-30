@@ -6,8 +6,8 @@ import router from './router'
 import BootstrapVue from 'bootstrap-vue'
 import 'vue-awesome/icons'
 
-import '@fortawesome/fontawesome-free/css/all.css'
-import '@fortawesome/fontawesome-free/js/all.js'
+// import '@fortawesome/fontawesome-free/css/all.css'
+// import '@fortawesome/fontawesome-free/js/all.js'
 
 
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
