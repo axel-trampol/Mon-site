@@ -23,7 +23,12 @@
         <div class="box" id="box2">
             <div>
                 <p>Je suis un developpeur web / intégrateur en quête d'un nouveau poste basé sur Paris.</p> 
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eu elit in lectus imperdiet tempor sit amet sit amet sapien. Donec eget nibh sed turpis elementum dignissim. Etiam id pretium nibh. Aliquam sed dictum lacus. Integer porttitor luctus nisl, vel luctus neque molestie sed. Phasellus et sem quis lorem condimentum blandit. Aliquam laoreet risus ac nunc luctus, aliquam porttitor nisl tristique. Quisque semper nunc sit amet aliquam maximus. </p>
+                <p>Qui sui-je ? Une jeune homme de 25 ans qui recherche l'amo.. euh non, mauvais site desolé! Un jeune homme plein de motivation passionné par le web que vous devriez embaucher.
+                    Pourqoi ? Et bien parce que je suis qualifié (en tout cas suffisament pour réaliser ce site) et déterminé. Formé à la Wild Code School, je n'ai pas seulement appris le code j'ai appris à apprendre. Une qualité, et pas des moindres, car ô combien précieuse lorsque l'on intégre une nouvelle entreprise où tout, même les bases, semblent à redécouvrir.
+                    Ce que je veux ? Que l'on me donne ma chance.
+                    Ce que j'éspère ? Vous avoir convaincu !
+                </p>
+                <p class="lien_cv">Mon cv <router-link class="lien" to="cv" target="_blank">ici</router-link>!</p>
             </div>
            </div>
     </div>
@@ -102,8 +107,8 @@
                     <div>
                         <p class="icon3">
                             <a target="_blank" href="https://github.com/axel-trampol"><i class="icon fab fa-github"></i></a>
-                            <a target="_blank" href="https://fr.linkedin.com/in/axel-trampol?challengeId=AQGU5OiS3eMx8QAAAXUs_TdFQRdknDnSCltw0cFxZAqe8bvYhbPWHTMJ5KpG11lb-i-XqBPN6i8OfIC8149_X_DlIDXnUDlCng&submissionId=a3b729b6-ba35-3e16-7f8c-46a620553826"><i class="icon fab fa-linkedin"></i></a>
-                            <a target="_blank"><i class="icon fab fa-twitter"></i></a>
+                            <a target="_blank" href="https://www.linkedin.com/in/axel-trampol"><i class="icon fab fa-linkedin"></i></a>
+                            <a target="_blank" href="https://www.facebook.com/trampol.axel"><i class="icon fab fa-facebook-square"></i></a>
                         </p>
                     </div>
                 </div>
@@ -136,8 +141,8 @@
                 </p>
                 <p id="icon">
                     <a target="_blank" href="https://github.com/axel-trampol" class="icon2"><i class="icon fab fa-github"></i></a>
-                    <a target="_blank" href="https://fr.linkedin.com/in/axel-trampol?challengeId=AQGU5OiS3eMx8QAAAXUs_TdFQRdknDnSCltw0cFxZAqe8bvYhbPWHTMJ5KpG11lb-i-XqBPN6i8OfIC8149_X_DlIDXnUDlCng&submissionId=a3b729b6-ba35-3e16-7f8c-46a620553826" class="icon2"><i class="icon fab fa-linkedin"></i></a>
-                    <a target="_blank" class="icon2"><i class="icon fab fa-twitter"></i></a>
+                    <a target="_blank" href="https://www.linkedin.com/in/axel-trampol" class="icon2"><i class="icon fab fa-linkedin"></i></a>
+                    <a target="_blank" href="https://www.facebook.com/trampol.axel" class="icon2"><i class="icon fab fa-facebook-square"></i></a>
                 </p>
             </div>
         </div>
@@ -147,10 +152,14 @@
 </template>
 
 <script>
+// import pdf from 'vue-pdf'
+import cv from './cv.vue'
 import portfolio from './portfolio.vue'
 export default {
   components: {
-    portfolio
+    portfolio,
+    // pdf,
+    cv
   },
   name: 'corps',
 }
@@ -182,11 +191,19 @@ export default {
     #icon .icon {
         font-size: 50px;
         margin: 20px;
-        color: black;
-    }
-    .icon2 :hover {
+        color: rgba(0, 0, 0, 0.795);
+        transition: 0.3s;
         cursor: pointer;
-        color: rgba(0, 0, 0, 0.712);
+    }
+    #icon .icon:hover {
+        color: black;
+        transition: 0.3s;
+    }
+    .lien {
+        font-family: 'Times New Roman', Times, serif;
+    }
+    .lien_cv {
+        font-family: 'Times New Roman', Times, serif;
     }
     .menu {
         display: flex;
@@ -201,7 +218,7 @@ export default {
         color: black!important;
     }
     #box1 {
-        background-color: rgb(255,0,72);
+        background-color: #d34b26e3;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -280,7 +297,7 @@ export default {
         flex-direction: column;
     }
     #box6 a {
-        color: rgb(255,0,72);
+        color: #d34b26e3;
     }
   
     #box2 div {
@@ -304,12 +321,12 @@ export default {
     a {
         font-family: "kulag";
         cursor: pointer;
-        color: rgb(255,0,72);
+        color: #d34b26e3;
         text-decoration: none;
         font-size: 20px;
     }
     .mail {
-        color: rgb(255,0,72);
+        color: #d34b26e3;
         text-decoration: underline!important;
         font-family: "times new roman";
         font-size: 16px;
@@ -336,9 +353,9 @@ export default {
             display: none;
         }
         #box3 {
-            background-image: url(../assets/portofolio-mobile.png);
+            background-image: url(../assets/portfolio-mobile.png);
             background-repeat: no-repeat;
-            background-size: 100%;
+            background-size: 75%;
             background-position: 0% 100%;
         }
         #box4 {
@@ -393,7 +410,7 @@ export default {
             text-align: center;
             display: flex;
             justify-content: space-between;
-            padding: 10%;
+            margin: 10%;
         }
         .icon3 .icon {
             font-size: 50px;
@@ -404,6 +421,17 @@ export default {
         .icon3 a:hover .icon  {
             color: rgba(255, 255, 255, 0.534);
             transition: 0.3s;
+        }
+    }
+    @media screen and (max-width: 500px) {
+        .box {
+            height: 100vh;
+        }
+        .icon3 .icon {
+            font-size: 40px;
+            color: white;
+            transition: 0.3s;
+            padding: 10%;
         }
     }
 

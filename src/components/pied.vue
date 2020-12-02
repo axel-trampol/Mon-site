@@ -46,14 +46,14 @@ export default {
   display: flex;
   justify-content: space-between;
   /* flex-direction: column; */
-  background-color: rgb(255,0,72);
+  background-color: #d34b26e3;
   width: 100%;
   height: 100%;
   background-size: cover;
   color: black;
   background-image: url(../assets/main2.png);
   background-repeat: no-repeat;
-  background-size: 28%;
+  background-size: contain;
   background-position: center;
 }
 .container div {
@@ -99,19 +99,19 @@ export default {
   transition: 0.3s;
 }
 @media screen and (max-width: 1500px) {
-    .container {
-        -webkit-background-size: 600px; /* pour anciens Chrome et Safari */
+    /* .container {
+        -webkit-background-size: 600px; 
         background-size: 600px;
-        }
+        } */
     .center h1 {
       font-size: 130px;
     }
 }
 @media screen and (max-width: 950px) {
-    .container {
-        -webkit-background-size: 500px; /* pour anciens Chrome et Safari */
+    /* .container {
+        -webkit-background-size: 500px; 
         background-size: 500px;
-    }
+    } */
     .center h1 {
       font-size: 100px;
     }
@@ -120,10 +120,10 @@ export default {
     }
 }
 @media screen and (max-width: 600px) {
-    .container {
-        -webkit-background-size: 400px; /* pour anciens Chrome et Safari */
+    /* .container {
+        -webkit-background-size: 400px; 
         background-size: 400px;
-    }
+    } */
     .center h1 {
       font-size: 90px;
     }

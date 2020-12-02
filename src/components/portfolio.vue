@@ -10,9 +10,9 @@
             <a href="#precious" target="blank">
               <img src="../assets/ptit-baroudeur.png" alt="polaroid">
             </a>
-            <router-link to="/precious" target="blank">
+            <!-- <router-link to="/precious" target="blank">
               <img src="../assets/seazon.png" alt="polaroid">
-            </router-link>
+            </router-link> -->
             <router-link to="/precious" target="blank">
               <img src="../assets/find-the-precious.png" alt="polaroid">
             </router-link>

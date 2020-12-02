@@ -19,6 +19,7 @@
     "vue-awesome": "^4.1.0",
     "vue-carousel": "^0.18.0",
     "vue-flickity": "^1.2.1",
+    "vue-pdf": "^4.2.0",
     "vue-router": "^3.0.1"
   },
   "devDependencies": {

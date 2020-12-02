@@ -21,6 +21,7 @@ export default {
 import VueCarousel from 'vue-carousel';
 Vue.use(VueCarousel);
 
+console.log("Site réalisé avec amour par Axel Trampol")
 </script>
 
 <style>

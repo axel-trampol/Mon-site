@@ -68,7 +68,7 @@ img {
 }
 .titre {
   padding-top: 2%;
-  color: rgb(255,0,72);
+  color: #d34b26e3;
 }
 .container {
   text-align: center;
@@ -82,7 +82,7 @@ img {
   color: white;
   background-image: url(../assets/main.png);
   background-repeat: no-repeat;
-  background-size: 40%;
+  background-size: contain;
   background-position: center;
 }
 .menu {
@@ -91,7 +91,7 @@ img {
   margin-left: auto;
   margin-right: auto;
   padding-bottom: 2%;
-  color: rgb(255,0,72);
+  color: #d34b26e3;
   font-size: 13px;
   width: 20%;
   font-family: "kulag";
@@ -107,21 +107,21 @@ h2 {
 a {
   font-family: "kulag";
   cursor: pointer;
-  color: rgb(255,0,72);
+  color: #d34b26e3;
   text-decoration: none;
   font-size: 20px;
 }
 @media screen and (max-width: 1500px) {
-    .container {
-        -webkit-background-size: 770px; /* pour anciens Chrome et Safari */
+    /* .container {
+        -webkit-background-size: 770px; 
         background-size: 770px;
-        }
+        } */
 }
 @media screen and (max-width: 900px) {
-    .container {
-        -webkit-background-size: 550px; /* pour anciens Chrome et Safari */
+    /* .container {
+        -webkit-background-size: 550px; 
         background-size: 550px;
-    }
+    } */
     h1 {
       font-size: 100px;
     }
@@ -135,12 +135,13 @@ a {
     }
 }
 @media screen and (max-width: 600px) {
-    .container {
-        -webkit-background-size: 400px; /* pour anciens Chrome et Safari */
-        background-size: 400px;
-    }
+    /* .container {
+      -webkit-background-size: 400px; 
+      background-size: 400px;
+    } */
     h1 {
       font-size: 80px;
     }
 }
+
 </style>

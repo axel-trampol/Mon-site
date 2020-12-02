@@ -4,6 +4,7 @@ import tete from '@/components/tete'
 import corps from '@/components/corps'
 import portfolio from '@/components/portfolio'
 import precious from '@/components/precious'
+import cv from '@/components/cv'
 
 Vue.use(Router)
 
@@ -28,6 +29,11 @@ export default new Router({
       path: '/precious',
       name: 'precious',
       component: precious
+    },
+    {
+      path: '/cv',
+      name: 'cv',
+      component: cv
     }
   ]
 })
