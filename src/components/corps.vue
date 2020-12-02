@@ -1,6 +1,6 @@
 <template>
 <div class="corps">
-    <div class="corpus">
+    <div class="corpus corpus1">
         <div class="box" id="box1">
             <div class="none">
 
@@ -20,6 +20,11 @@
                 <a href="#box5">CONTACT</a>
             </div>
         </div>
+        <div class="pp">
+            <div></div>
+            <div class="pp2"><img src="../assets/pp.png" alt="photo de l'auteur"></div>
+            <div></div>
+        </div>
         <div class="box" id="box2">
             <div>
                 <p>Je suis un developpeur web / intégrateur en quête d'un nouveau poste basé sur Paris.</p> 
@@ -28,7 +33,7 @@
                     Ce que je veux ? Que l'on me donne ma chance.
                     Ce que j'éspère ? Vous avoir convaincu !
                 </p>
-                <p class="lien_cv">Mon cv <router-link class="lien" to="cv" target="_blank">ici</router-link>!</p>
+                <p class="lien_cv">Mon CV et ma lettre de motivation <router-link class="lien" to="cv" target="_blank">ici</router-link>!</p>
             </div>
            </div>
     </div>
@@ -183,7 +188,30 @@ export default {
     .corpus {
         display: flex;
         max-width: 100vw;
-
+    }
+    .corpus1 {
+        position: relative;
+    }
+    .pp {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        height: 100%;
+        justify-content: space-between;
+        left: 50%;
+        transform: translate(-50%,0);
+    }
+    .pp div {
+        height: 33%;
+    }
+    .pp img {
+        clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
+        left: 50%;
+        transform: translate(-50%,0);
+        position: absolute; 
+        z-index: 1;
+        max-width: 120px;
     }
     #icon {
         display: flex;
@@ -340,14 +368,36 @@ export default {
             background-size: cover;
         }
     }
+     @media screen and (max-width: 1350px) {
+        .pp img {
+            width: 90px;
+        }
+        #box2 div {
+            padding: 14%;
+        }
+    }
+    @media screen and (max-width: 1200px) {
+        .pp img {
+            width: 90px;
+        }
+    }
     @media screen and (max-width: 900px) {
         .menu {
             width: 70%;
+        }
+        .pp img {
+            display: none;
+        }
+        #box2 div {
+            padding: 10%;
         }
     }
     @media screen and (max-width: 660px) {
         .menu {
             width: 40%;
+        }
+        .pp {
+            display: none;
         }
         #box2 {
             display: none;
