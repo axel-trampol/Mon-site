@@ -7,16 +7,16 @@
           <p>CES TEMPLATES SONT CONCUS AVEC LE FRAMEWOK VUE.JS, IL NE S<span>'</span>AGIT QUE D<span>'</span>IMAGE MAIS ILS SERONT BIENTOT DISPONIBLE SUR <a href="https://github.com/axel-trampol" target="blank">MON GITHUB</a></p>
           <p>P.S: FULL RESPONSIVE OF COURSE !</p>
           <div class="polaroid">
-            <a href="#precious" target="blank">
+            <router-link to="/baroudeur" target="blank">
               <img src="../assets/ptit-baroudeur.png" alt="polaroid">
-            </a>
+            </router-link>
             <!-- <router-link to="/precious" target="blank">
               <img src="../assets/seazon.png" alt="polaroid">
             </router-link> -->
             <router-link to="/precious" target="blank">
               <img src="../assets/find-the-precious.png" alt="polaroid">
             </router-link>
-            <router-link to="/precious" target="blank">
+            <router-link to="/club" target="blank">
               <img src="../assets/club-27.png" alt="polaroid">
             </router-link>
           </div>
@@ -35,7 +35,14 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script>
 
+import baroudeur from './baroudeur.vue'
+import club from './club.vue'
+
   export default {
+    components: {
+      baroudeur,
+      club
+    },
     data() {
       return {
         slide: 0,
@@ -120,7 +127,7 @@
 }
 
 p {
-  color: rgb(255,0,72);
+  color: #d34b26e3;
   font-family: "kulag";
   text-align: center;
   font-size: 20px;
@@ -128,17 +135,17 @@ p {
 
 p a {
   text-decoration: underline;
-  color: rgb(255,0,72);
+  color: #d34b26e3;
 }
 
 p a:hover {
   text-decoration: underline;
-  color: rgb(255,0,72);
+  color: #d34b26e3;
   cursor: pointer;
 }
 
 .home {
-  color: rgb(255,0,72);
+  color: #d34b26e3;
   text-align: center;
   text-decoration: none;
   font-family: "kulag";
@@ -151,7 +158,7 @@ p a:hover {
 }
 
 .home:hover {
-  color: rgb(255,0,72);
+  color: #d34b26e3;
   text-decoration: underline; 
 }
 

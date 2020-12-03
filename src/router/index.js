@@ -5,6 +5,10 @@ import corps from '@/components/corps'
 import portfolio from '@/components/portfolio'
 import precious from '@/components/precious'
 import cv from '@/components/cv'
+import baroudeur from '@/components/baroudeur'
+import club from '@/components/club'
+import gallerie from '@/components/gallerie'
+import log from '@/components/log'
 
 Vue.use(Router)
 
@@ -34,7 +38,28 @@ export default new Router({
       path: '/cv',
       name: 'cv',
       component: cv
+    },
+    {
+      path: '/baroudeur',
+      name: 'baroudeur',
+      component: baroudeur
+    },
+    {
+      path: '/club',
+      name: 'club',
+      component: club
+    },
+    {
+      path: '/gallerie',
+      name: 'gallerie',
+      component: gallerie
+    },
+    {
+      path: '/log',
+      name: 'log',
+      component: log
     }
+    
   ]
 })
 

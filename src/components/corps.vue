@@ -165,6 +165,7 @@ export default {
     portfolio,
     // pdf,
     cv
+
   },
   name: 'corps',
 }
