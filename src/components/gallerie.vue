@@ -6,7 +6,7 @@
                     <router-link to="baroudeur"><a href="" title="Où suis-je en ce moment ?"><i class="icon fas fa-map-signs"></i></a></router-link>
                     <router-link to="gallerie"><a href="" title="La galerie"><i class="icon fas fa-photo-video"></i></a></router-link>
                     <router-link to="/" title="Site pro"><i class="icon fas fa-laptop-code"></i></router-link>
-                    <router-link to="admin"><a href="" title="Log toi ! Enfin..si t'es vip"><i class="icon fa fa-user-secret"></i></a></router-link>
+                    <router-link to="log"><a href="" title="Log toi ! Enfin..si t'es vip"><i class="icon fa fa-user-secret"></i></a></router-link>
                 </div>
             </div>
             <img src="../assets/baroudeur/castle.jpg" alt="background avec logo du site">

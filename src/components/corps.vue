@@ -10,7 +10,12 @@
             </h1>
             <div class="block">
                 <p>Je suis un developpeur web / intégrateur en quête d'un nouveau poste basé sur Paris.</p> 
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eu elit in lectus imperdiet tempor sit amet sit amet sapien. Donec eget nibh sed turpis elementum dignissim. Etiam id pretium nibh. Aliquam sed dictum lacus. Integer porttitor luctus nisl, vel luctus neque molestie sed. Phasellus et sem quis lorem condimentum blandit. Aliquam laoreet risus ac nunc luctus, aliquam porttitor nisl tristique. Quisque semper nunc sit amet aliquam maximus. </p>
+                <p>Qui sui-je ? Une jeune homme de 25 ans qui recherche l'amo.. euh non, mauvais site desolé! Un jeune homme plein de motivation passionné par le web que vous devriez embaucher.
+                    Pourqoi ? Et bien parce que je suis qualifié (en tout cas suffisament pour réaliser ce site) et déterminé. Formé à la Wild Code School, je n'ai pas seulement appris le code j'ai appris à apprendre. Une qualité, et pas des moindres, car ô combien précieuse lorsque l'on intégre une nouvelle entreprise où tout, même les bases, semblent à redécouvrir.
+                    Ce que je veux ? Que l'on me donne ma chance.
+                    Ce que j'éspère ? Vous avoir convaincu !
+                </p>
+                <p class="lien_cv2">Mon CV et ma lettre de motivation <router-link class="lien" to="cv" target="_blank">ici</router-link>!</p>
             </div>
             <div class="menu menu1">
                 <a href="#box1">ABOUT</a>
@@ -233,6 +238,9 @@ export default {
     }
     .lien_cv {
         font-family: 'Times New Roman', Times, serif;
+    }
+    .lien_cv2 a {
+        color: black!important;
     }
     .menu {
         display: flex;

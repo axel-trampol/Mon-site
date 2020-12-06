@@ -1,28 +1,22 @@
 <template>
     <div class="log">
         <div class="modal">
-            
             <form action="/ma-page-de-traitement" method="post">
-            <div class="titre">
-                <h1>Login</h1>
-                <router-link to="baroudeur"><p>Retour à la page d'acceuil</p></router-link>
-            </div>
-    <div>
-        
-        <input required type="text" id="name" name="user_name" placeholder="Identifiant">
-    </div>
-    <div>
-        
-        <input required id="text" placeholder="Mot de passe">
-    </div>
-    
-    <div class="button">
-        <button>Se connecter</button>
-    </div>
-</form>
- 
+                <div class="titre">
+                    <h1>Login</h1>
+                    <router-link to="baroudeur"><p>Retour à la page d'acceuil</p></router-link>
+                </div>
+                <div>
+                    <input required type="text" id="name" name="user_name" placeholder="Identifiant">
+                </div>
+                <div>
+                    <input required id="text" placeholder="Mot de passe">
+                </div>
+                <div class="button">
+                    <button>Se connecter</button>
+                </div>
+            </form>
         </div>
-        
     </div>
 </template>
 

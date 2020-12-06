@@ -8,10 +8,10 @@
                 </div>
 
                 <div class="selection">
-                    <router-link to="club"><h2>HOME</h2></router-link>
-                    <router-link to=""><h2>ABOUT</h2></router-link>
-                    <router-link to=""><h2>ARTISTS</h2></router-link>
-                    <router-link to=""><h2>CONTACT</h2></router-link>
+                    <router-link to="club"><h2 class="click">HOME</h2></router-link>
+                    <router-link to="about"><h2>ABOUT</h2></router-link>
+                    <router-link to="artist"><h2>ARTISTS</h2></router-link>
+                    <router-link to="contactinky"><h2>CONTACT</h2></router-link>
                     <i class="icon search fas fa-search"></i>
                 </div>
             
@@ -22,7 +22,7 @@
                     <div>
                         <img src="../assets/club/inki-logo.png" alt="logo inky">
                         <div class="consul">
-                            <button>CONATCT</button>
+                            <router-link to="contactinky"><button>CONATCT</button></router-link>
                             <p>Pour une consultation et choisir<br/>votre prochain tatouage avec nous</p>
                         </div>
                     </div>
@@ -30,8 +30,8 @@
                         
                     
                 </div>
-                <div>
-
+                <div class="image">
+                    <!-- <img src="../assets/club/tatouage.png" alt="personne tatouée"> -->
                 </div>
             </div>
         </div>
@@ -39,7 +39,15 @@
 </template>
 
 <script>
+import artist from './artist.vue'
+import contactinky from './contactinky.vue'
+import about from './about.vue'
 export default {
+    components: {
+        artist,
+        about,
+        contactinky
+    },
   name: 'club',
 }
 </script>
@@ -62,9 +70,13 @@ export default {
     font-family: "lato";
     background-color: #2b2b2b;
     font-size: 10px;
+    filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.479));
 }
 .logo {
     width: 50%;
+}
+a {
+    text-decoration: none;
 }
 .selection {
     display: flex;
@@ -80,6 +92,9 @@ export default {
     color: #ffa700;
     text-decoration: none;
     transition: 0.3s;
+}
+.click {
+    color: #ffa700!important;
 }
 .search {
     transition: 0.3s;
@@ -97,6 +112,12 @@ export default {
     justify-content: space-around;
     width: 100%;
     height: 90vh;
+    background-image: url(../assets/club/tatouage.png);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: contain;
+
+
 }
 .logo2 {
     height: 100%;
@@ -125,7 +146,7 @@ export default {
     padding: 1em;
     background-color:#2b2b2b;
     color: white;
-    width: 50%;
+    width: 40%;
     margin-left: auto;
     margin-right: auto;
     border: none;
@@ -133,10 +154,12 @@ export default {
     text-align: center;
     cursor: pointer;
     transition: 0.3s;
+    outline: none;
 }
 .consul button:hover {
     background-color: #2b2b2bda;
     transition: 0.3s;
+    outline: none;
 }
 .consul p {
     font-family: "lato";

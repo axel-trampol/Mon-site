@@ -9,6 +9,9 @@ import baroudeur from '@/components/baroudeur'
 import club from '@/components/club'
 import gallerie from '@/components/gallerie'
 import log from '@/components/log'
+import artist from '@/components/artist'
+import about from '@/components/about'
+import contactinky from '@/components/contactinky'
 
 Vue.use(Router)
 
@@ -58,7 +61,23 @@ export default new Router({
       path: '/log',
       name: 'log',
       component: log
+    },
+    {
+      path: '/artist',
+      name: 'artist',
+      component: artist
+    },
+    {
+      path: '/about',
+      name: 'about',
+      component: about
+    },
+    {
+      path: '/contactinky',
+      name: 'contactinky',
+      component: contactinky
     }
+    
     
   ]
 })
