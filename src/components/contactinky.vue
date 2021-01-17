@@ -19,9 +19,9 @@
             </div>
             <div class="present-page">
                 <div class="image">
-                    <h1>GET IN TOUCH</h1>
-                    <p>Vous avez votre prochain tatouage en tête?<br/>oou vous voulez une consultation avec l'un de nos artists?<br/>Alons-y.</p>
-                    <p>254 Adresse Completement Fictive, Ville Random<br/>778-555-8373</p>
+                    <img src="../assets/club/contact.png" alt="image contact">
+                    <p class="blanc">Vous avez votre prochain tatouage en tête?<br/>oou vous voulez une consultation avec l'un de nos artists?<br/>Alons-y.</p>
+                    <p class="orange">254 Adresse Completement Fictive, Ville Random<br/>778-555-8373</p>
                 </div>
                 <div class="formulaire">
                     <form action="/ma-page-de-traitement" method="post">
@@ -124,11 +124,16 @@ a {
     width: 100%;
     height: 90vh;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
 }
 .present-page div {
-    width: 50%;
-    margin: auto;
+    
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.formulaire {
+    width: 30%;
+    max-width: 800px;
 }
 form input {
     width: 100%;
@@ -191,5 +196,77 @@ button:hover {
 }
 .image {
     text-align: center;
+    width: 30%;
+    padding: 20px;
+}
+.image img {
+    width: 60%;
+}
+.image p {
+    font-family: "lato";
+}
+.orange {
+    color: #ffa700;
+}
+.blanc {
+    color: white;
+}
+@media screen and (max-width: 1350px) {
+    .image {
+        width: 500px;
+    }
+    .formulaire {
+        width: 500px;
+        padding-right: 40px;
+    }
+    .present-page {
+        flex-wrap: wrap;
+    }
+}
+@media screen and (max-width: 1080px) {
+    .image {
+        width: 500px;
+        margin-bottom: 50px!important;
+    }
+    .formulaire {
+        width: 500px;
+        margin-top: 50px!important;
+    }
+    .present-page {
+        flex-wrap: wrap;
+    }
+}
+@media screen and (max-width: 1250px) {
+    .navbar {
+        justify-content: space-around;
+    }
+    .logo {
+        display: none;
+    }
+    .selection {
+        width: 100%;
+    }
+    .icon {
+        display: none;
+    }
+    .present-page, .page, .contactinky {
+        height: 100%;
+    }
+}
+@media screen and (max-width: 500px) {
+    .selection {
+        font-size: 8px;
+    }
+    .formulaire {
+        margin-left: 12px;
+        margin-right: 8px;
+    }
+    .button {
+        margin-bottom: 20px!important;
+        padding-left: 15px;
+    }
+    .button button {
+        width: 300px;
+    }
 }
 </style>

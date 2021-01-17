@@ -39,10 +39,9 @@ export default {
         height: 100%;
         font-family: "Footlight MT Light";
         background-image:url("https://images3.alphacoders.com/750/75027.jpg");
-    background-color: white;
+        background-color: white;
     }
     .modal {
-        background-color: white;
         width: 80%;
         max-width: 500px;
         margin: auto;

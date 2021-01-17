@@ -20,8 +20,8 @@
             <div class="present-page">
                 <div class="flex">
                     <div>
-                        <img src="../assets/club/portrait.jpg" alt="Portrait">
-                        <h1>EMMA</h1>
+                        <img src="../assets/club/portrait1.png" alt="Portrait">
+                        
                          <p class="p1">
                              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's 
                             standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a 
@@ -35,8 +35,8 @@
                         <button>BOOK</button>
                     </div>
                     <div>
-                        <img src="../assets/club/portrait.jpg" alt="Portrait">
-                        <h1>CHARLIE</h1>
+                        <img src="../assets/club/portrait2.png" alt="Portrait">
+                       
                         <p class="p1">
                             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's 
                             standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a 
@@ -50,8 +50,8 @@
                         <button>BOOK</button>
                     </div>
                     <div>
-                        <img src="../assets/club/portrait.jpg" alt="Portrait">
-                        <h1>FREDERIC</h1>
+                        <img src="../assets/club/portrait3.png" alt="Portrait">
+                       
                         <p class="p1">
                             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's 
                             standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a 
@@ -159,14 +159,8 @@ a {
     background-color: #2b2b2b;
 }
 .present-page img {
-    width: 310px;
-    height: 310px;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
-    border-radius: 50%;
-    filter: grayscale(100%);
+    width: 400px;
+    height: auto;
 }
 .flex {
     display: flex;
@@ -230,5 +224,29 @@ a {
     background-color: rgba(250, 167, 0, 0.795);
     transition: 0.3s;
     outline: none;
+}
+@media screen and (max-width: 1500px) {
+    .present-page, .page {
+        height: 100%;
+    }
+}
+@media screen and (max-width: 1250px) {
+    .navbar {
+        justify-content: space-around;
+    }
+    .logo {
+        display: none;
+    }
+    .selection {
+        width: 100%;
+    }
+    .icon {
+        display: none;
+    }
+}
+@media screen and (max-width: 500px) {
+    .selection {
+        font-size: 8px;
+    }
 }
 </style>

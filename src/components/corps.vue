@@ -414,8 +414,7 @@ export default {
         #box3 {
             background-image: url(../assets/portfolio-mobile.png);
             background-repeat: no-repeat;
-            background-size: 75%;
-            background-position: 0% 100%;
+            background-size: 90%;
         }
         #box4 {
             display: none;

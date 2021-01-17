@@ -12,7 +12,8 @@ import log from '@/components/log'
 import artist from '@/components/artist'
 import about from '@/components/about'
 import contactinky from '@/components/contactinky'
-
+import terre from '@/components/terre'
+import earth from '@/components/earth'
 Vue.use(Router)
 
 export default new Router({
@@ -76,9 +77,21 @@ export default new Router({
       path: '/contactinky',
       name: 'contactinky',
       component: contactinky
+    },
+    {
+      path: '/terre',
+      name: 'terre',
+      component: terre
+    },
+    {
+      path: '/earth',
+      name: 'earth',
+      component: earth
     }
     
     
   ]
 })
+
+
 

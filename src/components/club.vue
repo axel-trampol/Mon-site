@@ -112,9 +112,9 @@ a {
     justify-content: space-around;
     width: 100%;
     height: 90vh;
-    background-image: url(../assets/club/tatouage.png);
+    background-image: url(../assets/club/tatouage.jpg);
     background-repeat: no-repeat;
-    background-position: bottom right;
+    background-position: bottom right 15%;
     background-size: contain;
 
 
@@ -163,5 +163,55 @@ a {
 }
 .consul p {
     font-family: "lato";
+}
+@media screen and (max-width: 1700px) {
+        .present-page {
+            background-size: 800px;
+            background-position: bottom right;
+        }
+    }
+@media screen and (max-width: 1250px) {
+    .present-page {
+        background-size: 700px;
+        background-position: bottom right;
+    }
+}
+@media screen and (max-width: 1250px) {
+    .present-page {
+        background-image: none;
+    }
+    .logo2 {
+        width: 100%;
+        margin: auto!important;
+
+    }
+    .logo2 img {
+        width: 500px;
+    }
+    .navbar {
+        justify-content: space-around;
+    }
+    .logo {
+        display: none;
+    }
+    .selection {
+        width: 100%;
+    }
+    .icon {
+        display: none;
+    }
+}
+@media screen and (max-width: 800px) {
+     .logo2 img {
+        width: 400px;
+    }
+}
+@media screen and (max-width: 500px) {
+     .logo2 img {
+        width: 300px;
+    }
+    .selection {
+        font-size: 8px;
+    }
 }
 </style>

@@ -7,16 +7,16 @@
           <p>CES TEMPLATES SONT CONCUS AVEC LE FRAMEWOK VUE.JS, IL NE S<span>'</span>AGIT QUE D<span>'</span>IMAGE MAIS ILS SERONT BIENTOT DISPONIBLE SUR <a href="https://github.com/axel-trampol" target="blank">MON GITHUB</a></p>
           <p>P.S: FULL RESPONSIVE OF COURSE !</p>
           <div class="polaroid">
-            <router-link to="/baroudeur" target="blank">
+            <router-link to="/terre" target="_blank">
               <img src="../assets/ptit-baroudeur.png" alt="polaroid">
             </router-link>
             <!-- <router-link to="/precious" target="blank">
               <img src="../assets/seazon.png" alt="polaroid">
             </router-link> -->
-            <router-link to="/precious" target="blank">
+            <router-link to="/precious" target="_blank">
               <img src="../assets/find-the-precious.png" alt="polaroid">
             </router-link>
-            <router-link to="/club" target="blank">
+            <router-link to="/club" target="_blank">
               <img src="../assets/club-27.png" alt="polaroid">
             </router-link>
           </div>
@@ -37,11 +37,13 @@
 
 import baroudeur from './baroudeur.vue'
 import club from './club.vue'
+import terre from './terre.vue'
 
   export default {
     components: {
       baroudeur,
-      club
+      club,
+      terre
     },
     data() {
       return {
@@ -169,5 +171,10 @@ p a:hover {
 span {
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+@media screen and (max-width: 500px) {
+        .port .titre {
+          font-size: 140px;
+        }
+    }
 
 </style>
