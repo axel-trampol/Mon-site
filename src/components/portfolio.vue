@@ -44,25 +44,10 @@ import terre from './terre.vue'
     components: {
       club,
       terre,
-       'vue-load-image': VueLoadImage
     },
-    data() {
-      return {
-        slide: 0,
-        sliding: null
-      }
-    },
-    methods: {
-      onSlideStart(slide) {
-        this.sliding = true
-      },
-      onSlideEnd(slide) {
-        this.sliding = false
-      }
-    }
+    
   }
 
-import VueLoadImage from 'vue-load-image'
 
 
 </script>
