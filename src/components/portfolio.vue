@@ -4,20 +4,25 @@
           <h1 class="titre">
             Portfolio
           </h1>
-          <p>CES TEMPLATES SONT CONCUS AVEC LE FRAMEWOK VUE.JS, IL NE S<span>'</span>AGIT QUE D<span>'</span>IMAGE MAIS ILS SERONT BIENTOT DISPONIBLE SUR <a href="https://github.com/axel-trampol" target="blank">MON GITHUB</a></p>
+          <p>CES SITES SONT CONCUS AVEC LE FRAMEWOK VUE.JS ET BEAUCOUP D<span>'</span>AMOUR, IL SONT DISPONIBLE SUR <a href="https://github.com/axel-trampol" target="blank">MON GITHUB</a></p>
           <p>P.S: FULL RESPONSIVE OF COURSE !</p>
           <div class="polaroid">
             <router-link to="/terre" target="_blank">
-              <img src="../assets/ptit-baroudeur.png" alt="polaroid">
+            <div slot="image" style="background-image: url(../assets/bbc.png)" data-src='../assets/bbc.png' />
+      <img slot="preloader" src="../assets/loader.gif" />
+      <div slot="error">error message</div>
             </router-link>
-            <!-- <router-link to="/precious" target="blank">
-              <img src="../assets/seazon.png" alt="polaroid">
-            </router-link> -->
-            <router-link to="/precious" target="_blank">
-              <img src="../assets/find-the-precious.png" alt="polaroid">
-            </router-link>
+            <!--<a href="https://axel-trampol.github.io/sacha/" target="blank">
+              <img src="../assets/chat.png" alt="polaroid">
+            </a>-->
+            <a href="https://green-digital.fr/#/" target="blank">
+              <img src="../assets/green.png" alt="polaroid">
+            </a>
+            <a href="https://axel-trampol.github.io/Mariage/" target="_blank">
+              <img src="../assets/precious.png" alt="polaroid">
+            </a>
             <router-link to="/club" target="_blank">
-              <img src="../assets/club-27.png" alt="polaroid">
+              <img src="../assets/tatouage.png" alt="polaroid">
             </router-link>
           </div>
           
@@ -34,16 +39,14 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script>
-
-import baroudeur from './baroudeur.vue'
 import club from './club.vue'
 import terre from './terre.vue'
 
   export default {
     components: {
-      baroudeur,
       club,
-      terre
+      terre,
+       'vue-load-image': VueLoadImage
     },
     data() {
       return {
@@ -61,7 +64,7 @@ import terre from './terre.vue'
     }
   }
 
-
+import VueLoadImage from 'vue-load-image'
 
 
 </script>
@@ -115,7 +118,7 @@ import terre from './terre.vue'
 }
 
 .polaroid img {
-  width: 15%;
+  width: 300px;
   margin: 2%;
   min-width: 300px;
   min-height: 300px;
@@ -168,13 +171,28 @@ p a:hover {
   width: 80vw;
 }
 
+#home {
+  padding-bottom: 20px;
+}
+
 span {
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-@media screen and (max-width: 500px) {
-        .port .titre {
-          font-size: 140px;
+@media screen and (max-width: 1370px) {
+        .polaroid img:hover {
+          transform: scale(1);
         }
     }
+@media screen and (max-width: 500px) {
+        .port .titre {
+          font-size: 130px;
+        }
+    }
+
+  @media screen and (max-width: 350px) {
+      .port .titre {
+        font-size: 110px;
+      }
+  }
 
 </style>

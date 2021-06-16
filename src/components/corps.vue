@@ -8,14 +8,14 @@
             <h1>
                 About
             </h1>
-            <div class="block">
+            <div class="block texte">
                 <p>Je suis un developpeur web / intégrateur en quête d'un nouveau poste basé sur Paris.</p> 
                 <p>Qui sui-je ? Une jeune homme de 25 ans qui recherche l'amo.. euh non, mauvais site desolé! Un jeune homme plein de motivation passionné par le web que vous devriez embaucher.
-                    Pourqoi ? Et bien parce que je suis qualifié (en tout cas suffisament pour réaliser ce site) et déterminé. Formé à la Wild Code School, je n'ai pas seulement appris le code j'ai appris à apprendre. Une qualité, et pas des moindres, car ô combien précieuse lorsque l'on intégre une nouvelle entreprise où tout, même les bases, semblent à redécouvrir.
+                    Pourquoi ? Et bien parce que je suis qualifié (en tout cas suffisament pour réaliser ce site) et déterminé. Webdesigner confirmé, je n'ai pas seulement appris le code j'ai appris à apprendre. Une qualité, et pas des moindres, car ô combien précieuse lorsque l'on intégre une nouvelle entreprise où tout, même les bases, semblent à redécouvrir.
                     Ce que je veux ? Que l'on me donne ma chance.
                     Ce que j'éspère ? Vous avoir convaincu !
                 </p>
-                <p class="lien_cv2">Mon CV et ma lettre de motivation <router-link class="lien" to="cv" target="_blank">ici</router-link>!</p>
+                <!--<p class="lien_cv2">Mon CV et ma lettre de motivation <router-link class="lien" to="cv" target="_blank">ici</router-link>!</p>-->
             </div>
             <div class="menu menu1">
                 <a href="#box1">ABOUT</a>
@@ -34,11 +34,11 @@
             <div>
                 <p>Je suis un developpeur web / intégrateur en quête d'un nouveau poste basé sur Paris.</p> 
                 <p>Qui sui-je ? Une jeune homme de 25 ans qui recherche l'amo.. euh non, mauvais site desolé! Un jeune homme plein de motivation passionné par le web que vous devriez embaucher.
-                    Pourqoi ? Et bien parce que je suis qualifié (en tout cas suffisament pour réaliser ce site) et déterminé. Formé à la Wild Code School, je n'ai pas seulement appris le code j'ai appris à apprendre. Une qualité, et pas des moindres, car ô combien précieuse lorsque l'on intégre une nouvelle entreprise où tout, même les bases, semblent à redécouvrir.
+                    Pourquoi ? Et bien parce que je suis qualifié (en tout cas suffisament pour réaliser ce site) et déterminé. Webdesigner confirmé, je n'ai pas seulement appris le code j'ai appris à apprendre. Une qualité, et pas des moindres, car ô combien précieuse lorsque l'on intégre une nouvelle entreprise où tout, même les bases, semblent à redécouvrir.
                     Ce que je veux ? Que l'on me donne ma chance.
                     Ce que j'éspère ? Vous avoir convaincu !
                 </p>
-                <p class="lien_cv">Mon CV et ma lettre de motivation <router-link class="lien" to="cv" target="_blank">ici</router-link>!</p>
+                <!--<p class="lien_cv">Mon CV et ma lettre de motivation <router-link class="lien" to="cv" target="_blank">ici</router-link>!</p>-->
             </div>
            </div>
     </div>
@@ -51,7 +51,7 @@
                 Work
             </h1>
             <div id="block2" class="block">
-                <router-link to="portfolio">
+                <router-link to="portfolio" target="_blank">
                     <h1>
                         PORTFOLIO
                     </h1>
@@ -71,7 +71,7 @@
                 <a href="#box5">CONTACT</a>
             </div>
         </div>
-        <router-link to="portfolio" class="box" id="box4">
+        <router-link to="portfolio" class="box" id="box4" target="_blank">
             
             <div>
 
@@ -117,7 +117,7 @@
                     <div>
                         <p class="icon3">
                             <a target="_blank" href="https://github.com/axel-trampol"><i class="icon fab fa-github"></i></a>
-                            <a target="_blank" href="https://www.linkedin.com/in/axel-trampol"><i class="icon fab fa-linkedin"></i></a>
+                            <!--<a target="_blank" href="https://www.linkedin.com/in/axel-trampol"><i class="icon fab fa-linkedin"></i></a>-->
                             <a target="_blank" href="https://www.facebook.com/trampol.axel"><i class="icon fab fa-facebook-square"></i></a>
                         </p>
                     </div>
@@ -151,7 +151,7 @@
                 </p>
                 <p id="icon">
                     <a target="_blank" href="https://github.com/axel-trampol" class="icon2"><i class="icon fab fa-github"></i></a>
-                    <a target="_blank" href="https://www.linkedin.com/in/axel-trampol" class="icon2"><i class="icon fab fa-linkedin"></i></a>
+                    <!--<a target="_blank" href="https://www.linkedin.com/in/axel-trampol" class="icon2"><i class="icon fab fa-linkedin"></i></a>-->
                     <a target="_blank" href="https://www.facebook.com/trampol.axel" class="icon2"><i class="icon fab fa-facebook-square"></i></a>
                 </p>
             </div>
@@ -213,6 +213,7 @@ export default {
     }
     .pp img {
         clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
+        -webkit-clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
         left: 50%;
         transform: translate(-50%,0);
         position: absolute; 
@@ -306,6 +307,7 @@ export default {
         color: rgba(255, 255, 255, 0);
         transition: 0.3s;
         font-family: "kulag";
+        text-align: center;
     }
     #box4:hover .portfolio {
         color: rgb(255, 255, 255);
@@ -471,7 +473,7 @@ export default {
             margin: 10%;
         }
         .icon3 .icon {
-            font-size: 50px;
+            font-size: 45px;
             color: white;
             transition: 0.3s;
             padding: 10%;
@@ -480,16 +482,45 @@ export default {
             color: rgba(255, 255, 255, 0.534);
             transition: 0.3s;
         }
+        .texte p {
+            font-size: 18px;
+        }
     }
     @media screen and (max-width: 500px) {
         .box {
             height: 100vh;
         }
         .icon3 .icon {
-            font-size: 40px;
+            font-size: 35px;
             color: white;
             transition: 0.3s;
-            padding: 10%;
+            padding: 8px;
+        }
+        .texte p {
+            font-size: 15px;
+        }
+        h1 {
+            font-size: 50px;
+        }
+    }
+
+    @media screen and (max-width: 1370px) {
+         #box4 .portfolio {
+            color: rgba(255, 255, 255, 0.822);
+            text-align: center;
+        }
+         #box4:hover .portfolio {
+            color: rgba(255, 255, 255, 0.822);
+            text-align: center;
+        }
+         #box4 {
+            background-color: rgba(48, 48, 48, 0.822);
+        }
+         #box4:hover {
+            filter: brightness(1);
+        }
+        .hover {
+            color: rgba(0, 0, 0, 0);
         }
     }
 

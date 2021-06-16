@@ -140,7 +140,16 @@ a {
       background-size: 400px;
     } */
     h1 {
-      font-size: 80px;
+      font-size: 70px;
+    }
+}
+@media screen and (max-width: 500px) {
+    /* .container {
+      -webkit-background-size: 400px; 
+      background-size: 400px;
+    } */
+    h1 {
+      font-size: 60px;
     }
 }
 

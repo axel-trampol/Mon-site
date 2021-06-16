@@ -1,5 +1,7 @@
 <template>
+
   <div id="app">
+    
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     
     
@@ -13,15 +15,19 @@
 
 <script src="path/to/vue-awesome/dist/vue-awesome.js"></script>
 <script>
+
 export default {
-  name: 'App'
+  name: 'App',
+    
 }
+
 
  import Vue from 'vue';
 import VueCarousel from 'vue-carousel';
 Vue.use(VueCarousel);
 
 console.log("Site réalisé avec amour par Axel Trampol")
+
 </script>
 
 <style>

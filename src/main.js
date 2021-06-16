@@ -9,7 +9,6 @@ import 'vue-awesome/icons'
 // import '@fortawesome/fontawesome-free/css/all.css'
 // import '@fortawesome/fontawesome-free/js/all.js'
 
-
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
  // carousel mobile
@@ -34,3 +33,12 @@ new Vue({
 
  // carousel mobile
  // carousel mobile
+
+ Vue.use(loader)
+
+new Vue({
+  el: '#app',
+  components:{
+  loader:loader
+  }
+});
