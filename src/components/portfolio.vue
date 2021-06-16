@@ -8,9 +8,7 @@
           <p>P.S: FULL RESPONSIVE OF COURSE !</p>
           <div class="polaroid">
             <router-link to="/terre" target="_blank">
-            <div slot="image" style="background-image: url(../assets/bbc.png)" data-src='../assets/bbc.png' />
-      <img slot="preloader" src="../assets/loader.gif" />
-      <div slot="error">error message</div>
+              <img src="../assets/bbc.png" alt="polaroid">
             </router-link>
             <!--<a href="https://axel-trampol.github.io/sacha/" target="blank">
               <img src="../assets/chat.png" alt="polaroid">

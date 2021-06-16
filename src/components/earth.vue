@@ -30,6 +30,7 @@
                 </div>
                 <div class="rappel">
                     <h2>SOUTH AMERICA - <span><router-link to="/terre">AFRICA </router-link></span></h2>
+                    
                 </div>
             </div>
         </div>
